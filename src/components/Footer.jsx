@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer id="contact" className="footer">
+    <footer className="footer">
       <div className="container">
         <div className="footer-content text-center">
           <h2 className="footer-logo">GARISSA<span className="text-gold">PRIME</span></h2>
@@ -11,7 +11,7 @@ const Footer = () => {
             <span className="dot">•</span>
             <a href="#crops">Harvest</a>
             <span className="dot">•</span>
-            <a href="mailto:info@garissaprime.com">Contact</a>
+            <a href="#contact">Contact</a>
           </div>
 
           <div className="contact-details mt-8">

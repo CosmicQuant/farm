@@ -63,9 +63,9 @@ const Hero = () => {
           A sustainable 50-acre sanctuary along the Tana River.
           Raising fattened sheep and goats for Eid, and cultivating organic onions, watermelons, and lemons.
         </p>
-        <div className="fade-in delay-3" style={{ marginTop: '2rem' }}>
+        <div className="hero-cta-group fade-in delay-3">
           <a href="#contact" className="btn btn-outline">Book for Eid</a>
-          <a href="#crops" className="btn btn-text" style={{ marginLeft: '1.5rem', color: '#fff', textDecoration: 'none' }}>View Produce →</a>
+          <a href="#crops" className="btn btn-text produce-link">View Produce →</a>
         </div>
       </div>
 
@@ -170,6 +170,38 @@ const Hero = () => {
           .hero-title { font-size: 3.5rem; }
           .hero-subtitle { border: none; padding: 0; }
           .eid-badge { margin-left: 0; margin-top: 0.5rem; display: block; width: fit-content; }
+          
+          .hero-cta-group {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            align-items: stretch;
+            margin-top: 2rem;
+          }
+          
+          .produce-link {
+             margin-left: 0 !important;
+             text-align: center;
+             display: block;
+             padding: 1rem;
+             background: rgba(255,255,255,0.1);
+             border: 1px solid rgba(255,255,255,0.3);
+          }
+        }
+        
+        .hero-cta-group {
+           margin-top: 2rem;
+        }
+        
+        .produce-link {
+           margin-left: 1.5rem;
+           color: #fff;
+           text-decoration: none;
+           transition: color 0.3s;
+        }
+        
+        .produce-link:hover {
+           color: var(--gold);
         }
       `}</style>
     </section>

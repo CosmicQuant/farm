@@ -32,7 +32,7 @@ const Livestock = () => {
                 onClick={() => setActiveTab(tab)}
                 className={`filter-btn ${activeTab === tab ? 'active' : ''}`}
               >
-                {tab}s
+                {tab === 'all' ? 'All' : `${tab}s`}
               </button>
             ))}
           </div>
