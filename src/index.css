@@ -227,4 +227,52 @@ p {
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+    /* Scale down base font size for mobile */
+  }
+
+  .container {
+    padding: 0 1.5rem;
+  }
+
+  .section {
+    padding: 4rem 0;
+    /* Reduce section padding */
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 1.75rem;
+  }
+
+  .gap-md {
+    gap: 1.5rem;
+  }
+
+  .gap-xl {
+    gap: 2.5rem;
+  }
+
+  .btn {
+    padding: 0.85rem 2rem;
+    width: 100%;
+    /* Full width buttons on mobile usually look better */
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
 }
